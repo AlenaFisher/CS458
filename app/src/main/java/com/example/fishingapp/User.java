@@ -10,12 +10,18 @@ public class User {
     private String lastName;
     private String userName;
     private String password;
+    private String emailAddress;
+    private String phoneNumber;
+    private String dateOfBirth;
 
-    public User(String firstName, String lastName, String userName, String password) {
+    public User(String firstName, String lastName, String userName, String password, String emailAddress, String phoneNumber, String dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
         this.password = password;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+        this.dateOfBirth = dateOfBirth;
     }
 
 
@@ -81,5 +87,49 @@ public class User {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    /**
+     * This method sets the users emailAddress
+     * @param emailAddress the users emailAddress
+     */
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    /**
+     * This method returns the users phoneNumber
+     * @return a string, the users phoneNumber
+     */
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    /**
+     * This method sets the users phoneNumber
+     * @param phoneNumber the users phoneNumber
+     */
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    /**
+     * This method returns the users dateOfBirth
+     * @return a string, the users dateOfBirth
+     */
+    public String getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    /**
+     * This method sets the users dateOfBirth
+     * @param dateOfBirth the users dateOfBirth
+     */
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }
