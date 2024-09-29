@@ -6,6 +6,7 @@ package com.example.fishingapp;
  * @date 9/25/2024
  */
 public class User {
+    private int id;
     private String firstName;
     private String lastName;
     private String userName;
@@ -14,7 +15,8 @@ public class User {
     private String phoneNumber;
     private String dateOfBirth;
 
-    public User(String firstName, String lastName, String userName, String password, String emailAddress, String phoneNumber, String dateOfBirth) {
+    public User(int id, String firstName, String lastName, String userName, String password, String emailAddress, String phoneNumber, String dateOfBirth) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
@@ -131,5 +133,13 @@ public class User {
      */
     public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
