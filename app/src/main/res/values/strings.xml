@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FishingApp</string>
+    <string name="firstNameHint">First Name</string>
+    <string name="lastNameHint">Last Name</string>
+    <string name="emailAddressHint">Email Address</string>
+    <string name="phoneNumberHint">555–555–5555</string>
+    <string name="dateOfBirthHint">mm/dd/yyyy</string>
+    <string name="userNameHint">User Name</string>
+    <string name="passwordHint">Password</string>
+    <string name="confirmPasswordHint">Confirm Password</string>
 </resources>
