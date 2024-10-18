@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".FragmentActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmExJ6s63V7U5QKpiE1i8rn2uTFpIJ11c"/>
+
     </application>
 
 </manifest>
