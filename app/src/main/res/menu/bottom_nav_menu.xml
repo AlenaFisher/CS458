@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/map"
+        android:title="Map"
+        android:icon="@drawable/map_foreground"/>
+
+    <item
+        android:id="@+id/weather"
+        android:title="Weather"
+        android:icon="@drawable/weather_foreground"/>
+
+    <item
+        android:id="@+id/fishInformation"
+        android:title="Fish"
+        android:icon="@drawable/fish_info_foreground"/>
+
+    <item
+        android:id="@+id/profileSettings"
+        android:title="Profile"
+        android:icon="@drawable/profile_foreground"/>
+
+    <item
+        android:id="@+id/fishLog"
+        android:title="Log"
+        android:icon="@drawable/log_catches_foreground"/>
+</menu>

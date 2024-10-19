@@ -1,5 +1,6 @@
 package com.example.fishingapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -66,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
                 correctInformation = true;
 //                changeView();
                 setContentView(R.layout.successful_login_temporary_page);
+                Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+                startActivity(intent);
+                finish();
+                break;
             }
 
             }
