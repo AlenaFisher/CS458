@@ -34,7 +34,7 @@ public class FragmentActivity extends AppCompatActivity {
             } else if(item.getItemId() == R.id.profileSettings) {
                 selectedFragment = new ProfileFragment();
             } else if(item.getItemId() == R.id.fishLog) {
-                selectedFragment = new LogCatchesFragment();
+                selectedFragment = new CatchLogFragment();
             } else {
                 return false;
             }
