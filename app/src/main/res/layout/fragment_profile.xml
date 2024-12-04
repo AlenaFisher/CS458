@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/StoredFirstName"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="80dp"
+        android:text=" "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredLastName"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="21dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredFirstName"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredEmail"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="21dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredLastName"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredPhone"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredEmail"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredBirthdate"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredPhone"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredUserName"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="175dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredBirthdate"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/StoredPassword"
+        android:layout_width="294dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="18dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredUserName"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/EditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Edit Profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StoredPassword" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditProfile" />
 </androidx.constraintlayout.widget.ConstraintLayout>
