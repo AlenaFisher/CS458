@@ -172,4 +172,16 @@ public class SQLHandler extends SQLiteOpenHelper {
          */
         sqlDatabase.delete(LIST_TABLE, ID + "=?", new String[] {String.valueOf(id)});
     }
+
+    /**
+     * Method to search through the database to see if a user requested username is already taken.
+     * @param userName
+     * @return
+     */
+    public boolean searchUsers(String userName){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(" SELECT * FROM " + LIST_TABLE + " WHERE " + USER_NAME + " = ? ", new String[] {userName});
+        if(cursor.getCount() > 0) return false;
+        else return true;
+    }
 }
