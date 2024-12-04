@@ -55,4 +55,13 @@ public class DatabaseHandler extends SQLHandler {
         super.deleteUser(id);
     }
 
+    /**
+     * Method for searching for a username in the database.
+     * @param userName
+     * @return
+     */
+    public boolean searchUsers(String userName){
+       return super.searchUsers(userName);
+    }
+
 }
