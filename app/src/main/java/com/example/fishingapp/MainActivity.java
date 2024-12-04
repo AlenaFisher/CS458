@@ -20,7 +20,7 @@ import java.util.Random;
 
 /**
  * @author Benaiah Gingrich
- * @date 09/29/2024
+ * @date 12/04//2024
  */
 
 public class MainActivity extends AppCompatActivity {
@@ -50,9 +50,6 @@ public class MainActivity extends AppCompatActivity {
         handler = new DatabaseHandler(this);
         handler.openDatabase();
         printUserNames();
-
-
-
     }
 
     /**
@@ -85,8 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
         for(int i=0; i<listOfUsers.size(); i++){
             if(userNameInputString.equals(listOfUsers.get(i).getUserName()) && userPasswordInputString.equals(listOfUsers.get(i).getPassword())){
+                SharedPreferences sharedPref = getSharedPreferences("MyUsers", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("username", userNameInput.getText().toString());
+                editor.apply();
                 correctInformation = true;
-//                changeView();
                 setContentView(R.layout.successful_login_temporary_page);
                 Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
                 startActivity(intent);
