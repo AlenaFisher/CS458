@@ -1,9 +1,17 @@
+/**
+ * @author Alena Fisher
+ * 10/27/2024
+ * Last updated: 12/07/2024
+ * This fragment displays a Google Map with various fishing locations marked.
+ * It allows the user to view information about different fish species by clicking on markers on the map.
+ */
 package com.example.fishingapp;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.DrawableRes;
@@ -20,26 +28,51 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap mMap;
+    private LatLng lakeLocation = new LatLng(35.36447, -103.49461);
 
+    /**
+     * Called when the fragment's view is created. This method sets up the map and button interactions.
+     * It initializes the map fragment, sets up the home button, and moves the map to the default lake location.
+     * @param inflater The LayoutInflater object that can be used to inflate
+     * any views in the fragment,
+     * @param container If non-null, this is the parent view that the fragment's
+     * UI should be attached to.  The fragment should not add the view itself,
+     * but this can be used to generate the LayoutParams of the view.
+     * @param savedInstanceState If non-null, this fragment is being re-constructed
+     * from a previous saved state as given here.
+     *
+     * @return The root view for this fragment.
+     */
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_map, container, false);
 
+        // Set up the map fragment inside this fragment
         SupportMapFragment mapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.maps);
         if(mapFragment == null) {
             mapFragment = SupportMapFragment.newInstance();
             getChildFragmentManager().beginTransaction().replace(R.id.maps, mapFragment).commit();
         }
-        mapFragment.getMapAsync(this);
+        mapFragment.getMapAsync(this); // Set this fragment as the callback for map events
+
+        // Set up the home button to move to the default lake location when clicked
+        ImageButton homeButton = view.findViewById(R.id.homeButton);
+        homeButton.setOnClickListener(v -> moveToLakeLocation());
 
         return view;
     }
 
+    /**
+     * Called when the map is ready to be used. This method sets up the initial markers and camerae position.
+     * It adds markers for various fishing spots and sets up an on-click listener for those markers to display the fish information.
+     * @param googleMap The GoogleMap object that has been initialized.
+     */
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mMap = googleMap;
 
+        // Specific location for the initial map view
         LatLng specificLocation = new LatLng(35.36447, -103.49461); // Initial map view after logging in
 
         // Creating locations for large mouth bass
@@ -111,15 +144,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         });
     }
 
+    /**
+     * Returns the appropriate drawable resource ID for the fish image based on the fish name.
+     *
+     * @param fishName The name of the fish species.
+     * @param location The resource ID of the corresponding fish image.
+     */
     private void showFishInfoDialog(String fishName, LatLng location) {
-        /**
-         * This method creates a card with the fish information to display to the user
-         * when they click on a specific map marker
-         *
-         * @param   String fishName   The name of the fish
-         * @param   LatLng location   The marker for the fish
-         */
-
         // Inflating the view for the fish
         View dialogView = LayoutInflater.from(getContext()).inflate(R.layout.fish_dialog, null);
 
@@ -176,5 +207,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 .setPositiveButton("OK", null)
                 .create()
                 .show();
+    }
+
+    /**
+     * Moves the map's camera to the default lake location when the home button is clicked.
+     */
+    private void moveToLakeLocation() {
+        if(mMap != null) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(lakeLocation, 15));
+        }
     }
 }
