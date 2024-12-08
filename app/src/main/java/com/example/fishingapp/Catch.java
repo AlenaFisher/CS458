@@ -6,18 +6,29 @@ package com.example.fishingapp;
  * This is a class that represents a catch a user made
  */
 public class Catch {
+    private int unique_ID;
+    private int id;
     private String title;
     private String location;
     private String weight;
     private String baitUsed;
     private String length;
 
-    public Catch(String title, String location, String weight, String baitUsed, String length) {
+    public Catch(int id, String title, String location, String weight, String baitUsed, String length) {
         this.title = title;
         this.location = location;
         this.weight = weight;
         this.baitUsed = baitUsed;
         this.length = length;
+        this.id = id;
+    }
+
+    public int getUnique_ID() {
+        return unique_ID;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
@@ -40,6 +51,18 @@ public class Catch {
         return length;
     }
 
+    public void setUnique_ID(int unique_ID) {
+        this.unique_ID = unique_ID;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
@@ -59,4 +82,13 @@ public class Catch {
     public void setLength(String length) {
         this.length = length;
     }
+
+    public void setAllItems(String title, String length, String weight, String baitUsed, String location){
+        this.title = title;
+        this.location = location;
+        this.weight = weight;
+        this.baitUsed = baitUsed;
+        this.length = length;
+    }
 }
+
