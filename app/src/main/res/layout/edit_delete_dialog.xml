@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Of Fish"/>
+
+    <EditText
+        android:id="@+id/lengthEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="length in Inches"/>
+
+    <EditText
+        android:id="@+id/weightEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight in pounds"/>
+
+    <EditText
+        android:id="@+id/baitUsedEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bait Used"/>
+
+    <EditText
+        android:id="@+id/locationEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location Of Catch" />
+
+</LinearLayout>

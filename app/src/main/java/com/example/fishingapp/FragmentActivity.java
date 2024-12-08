@@ -25,6 +25,10 @@ public class FragmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_activity);
 
+        //receiving the users ID from the previous activity
+        Bundle Recievebundle = getIntent().getExtras();
+        int userID = Recievebundle.getInt("Id");
+
         // Initialize the BottomNavigationView
         BottomNavigationView bottomNavigation = findViewById(R.id.bottomNavigationView);
 
@@ -42,7 +46,13 @@ public class FragmentActivity extends AppCompatActivity {
             } else if(item.getItemId() == R.id.profileSettings) {
                 selectedFragment = new ProfileFragment(); // Profile Settings fragment
             } else if(item.getItemId() == R.id.fishLog) {
-                selectedFragment = new CatchLogFragment(); // Fish Log fragment
+                selectedFragment = new CatchLogFragment();// Fish Log fragment
+
+                //creating a new bundle for the user ID and passing to the catch log fragment to be used
+                Bundle bundle = new Bundle();
+                bundle.putInt("id", userID);
+                selectedFragment.setArguments(bundle);
+
             } else {
                 return false; // Return false if no valid item was selected
             }

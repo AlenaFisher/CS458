@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * This is the custom adapter class, an adapter to connect the list view with a linked list. it extends Base Adapter
@@ -16,7 +17,7 @@ import java.util.LinkedList;
  */
 public class CustomCatchLogAdapter extends BaseAdapter  {
     Context context;
-    LinkedList<Catch> list = new LinkedList<>();
+    List<Catch> list = new LinkedList<>();
     LayoutInflater inflater;
 
     /**
@@ -24,7 +25,7 @@ public class CustomCatchLogAdapter extends BaseAdapter  {
      * @param list a linked list with object task
      * @param context the context of the page
      */
-    public CustomCatchLogAdapter(LinkedList<Catch> list, Context context) {
+    public CustomCatchLogAdapter(List<Catch> list, Context context) {
         this.list = list;
         this.context = context;
         inflater = (LayoutInflater.from(context));
@@ -63,8 +64,9 @@ public class CustomCatchLogAdapter extends BaseAdapter  {
         view = inflater.inflate(R.layout.listview, null);
         TextView listTxt = (TextView)           view.findViewById(R.id.textView);
         listTxt.setText("Fish: " + list.get(i).getTitle() + "\n" + "length (inches): " + list.get(i).getLength() +
-                "\n" + "bait used: " + list.get(i).getWeight() + "\n" + "Location: " + list.get(i).getLocation());
+                "\n" + "Weight (pounds): " + list.get(i).getWeight() + "\n" + "bait used: " + list.get(i).getBaitUsed() + "\n" + "Location: " + list.get(i).getLocation());
         return view;
     }
 
 }
+
