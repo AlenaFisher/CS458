@@ -2,9 +2,9 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#90A4AE">
 
 
     <ListView
@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="80dp"
+        android:divider="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,16 +20,43 @@
 
     </ListView>
 
-    <Button
+
+    <ImageButton
         android:id="@+id/createLogBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="27dp"
         android:layout_marginBottom="18dp"
-        android:text="+"
+        android:background="@drawable/home_button"
+        android:contentDescription="Add Log Button"
+        android:src="@drawable/plus_button"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@android:color/transparent"
         app:layout_constraintBottom_toTopOf="@+id/listView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="178dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="27dp"
+        android:text="Catch Log"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/listView"
+        app:layout_constraintEnd_toStartOf="@+id/createLogBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

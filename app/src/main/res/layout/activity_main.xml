@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ute_lake"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,6 +15,8 @@
         android:layout_marginStart="164dp"
         android:layout_marginTop="140dp"
         android:text="Login"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,6 +52,8 @@
         android:layout_marginTop="52dp"
         android:onClick="onLoginButtonClick"
         android:text="Login"
+        android:textAllCaps="false"
+        android:background="@drawable/home_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.749"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,6 +64,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="54dp"
+        android:textAllCaps="false"
+        android:background="@drawable/home_button"
         android:onClick="onCreateAccountButtonClick"
         android:text="Create Account"
         app:layout_constraintBaseline_toBaselineOf="@+id/loginBtn"

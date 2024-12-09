@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.List;
@@ -31,7 +32,7 @@ public class CatchLogFragment extends Fragment {
     EditText weight;
     EditText baitUsed;
     EditText location;
-    Button createLogBtn;
+    ImageButton createLogBtn;
     int userID;
     DatabaseHandler handler;
 

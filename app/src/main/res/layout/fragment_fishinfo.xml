@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#90A4AE"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -34,6 +39,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Smallmouth Bass"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textAlignment="center">
 
@@ -42,6 +49,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n soft plastic finesse worm (green pumpkin)">
 
                     </TextView>
@@ -49,6 +57,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n 14 inches">
 
                     </TextView>
@@ -56,6 +65,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 5 ">
 
                     </TextView>
@@ -63,6 +73,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -70,6 +81,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -80,9 +92,12 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -111,6 +126,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Largemouth Bass"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textAlignment="center">
 
@@ -119,6 +136,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n soft plastic finesse worm (green pumpkin)">
 
                     </TextView>
@@ -126,6 +144,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n 14 inches">
 
                     </TextView>
@@ -133,6 +152,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 5 ">
 
                     </TextView>
@@ -140,6 +160,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -147,6 +168,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -157,9 +179,12 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -186,6 +211,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="White Bass"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textAlignment="center">
 
@@ -194,6 +221,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n live minnows or shads">
 
                     </TextView>
@@ -201,6 +229,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n None">
 
                     </TextView>
@@ -208,6 +237,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 25 ">
 
                     </TextView>
@@ -215,6 +245,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -222,6 +253,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -233,9 +265,12 @@
 
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -263,6 +298,8 @@
                         android:layout_height="wrap_content"
                         android:text="Bluegill"
                         android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textAlignment="center">
 
                     </TextView>
@@ -270,6 +307,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n live worms">
 
                     </TextView>
@@ -277,6 +315,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n None">
 
                     </TextView>
@@ -284,6 +323,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 20 ">
 
                     </TextView>
@@ -291,6 +331,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -298,6 +339,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -308,9 +350,12 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -338,6 +383,8 @@
                         android:layout_height="wrap_content"
                         android:text="Carp"
                         android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textAlignment="center">
 
                     </TextView>
@@ -345,6 +392,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n corn and bread">
 
                     </TextView>
@@ -352,6 +400,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n None">
 
                     </TextView>
@@ -359,6 +408,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n None ">
 
                     </TextView>
@@ -366,6 +416,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -373,6 +424,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -382,9 +434,12 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -411,6 +466,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Catfish"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textAlignment="center">
 
@@ -419,6 +476,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n cut bait">
 
                     </TextView>
@@ -426,6 +484,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n None">
 
                     </TextView>
@@ -433,6 +492,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 15 ">
 
                     </TextView>
@@ -440,6 +500,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Summer">
 
                     </TextView>
@@ -447,6 +508,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -456,9 +518,12 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -486,6 +551,8 @@
                         android:layout_height="wrap_content"
                         android:text="Crappie"
                         android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textAlignment="center">
 
                     </TextView>
@@ -493,6 +560,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n live minnows">
 
                     </TextView>
@@ -500,6 +568,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n None">
 
                     </TextView>
@@ -507,6 +576,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 20 ">
 
                     </TextView>
@@ -514,6 +584,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -521,6 +592,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -531,9 +603,12 @@
 
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
@@ -560,6 +635,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Walleye"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textAlignment="center">
 
@@ -568,6 +645,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Top Bait:\n crankbait lures">
 
                     </TextView>
@@ -575,6 +653,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Minimum Size to Keep:\n 14 inches">
 
                     </TextView>
@@ -582,6 +661,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Catch Limit:\n 5 ">
 
                     </TextView>
@@ -589,6 +669,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Peak Catch Time:\n Spring">
 
                     </TextView>
@@ -596,6 +677,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Season:\n Open year-round">
 
                     </TextView>
@@ -605,7 +687,7 @@
             </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
