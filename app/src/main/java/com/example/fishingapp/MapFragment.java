@@ -186,7 +186,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                 break;
 
             case "Blue Gill":
-                imageRes = R.drawable.bluegillimage;
+                imageRes = R.drawable.bluegill;
                 break;
 
             case "Carp":
