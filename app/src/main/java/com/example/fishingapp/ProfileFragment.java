@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.List;
@@ -79,7 +80,7 @@ public class ProfileFragment extends Fragment {
         birthdate = inf.findViewById(R.id.StoredBirthdate);
         userName = inf.findViewById(R.id.StoredUserName);
         password = inf.findViewById(R.id.StoredPassword);
-        editButton = (Button) inf.findViewById(R.id.EditProfile);
+        editButton = inf.findViewById(R.id.EditProfile);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

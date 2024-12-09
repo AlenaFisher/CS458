@@ -3,189 +3,269 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#90A4AE">
 
-    <TextView
-        android:id="@+id/LabelFirstName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="First Name: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredFirstName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textStyle="bold"
+            android:textSize="35dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="150dp"
+            android:textColor="@color/black">
+
+        </TextView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="322dp"
+            android:layout_height="341dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginTop="50dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardBackgroundColor="#D3D3D3"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/LabelFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="First Name: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
 
-    <TextView
-        android:id="@+id/StoredFirstName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelFirstName"
-        app:layout_constraintTop_toTopOf="@+id/LabelFirstName"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                    <TextView
+                        android:id="@+id/StoredFirstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/LabelLastName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Last Name: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredLastName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredFirstName"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/StoredLastName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelLastName"
-        app:layout_constraintTop_toBottomOf="@+id/StoredFirstName"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/LabelEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredEmail"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredLastName"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:id="@+id/LabelLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:text="Last Name: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/StoredEmail"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelEmail"
-        app:layout_constraintTop_toBottomOf="@+id/StoredLastName"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
 
-    <TextView
-        android:id="@+id/LabelPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Phone: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredPhone"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredEmail"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+                    <TextView
+                        android:id="@+id/StoredLastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/StoredPhone"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelPhone"
-        app:layout_constraintTop_toBottomOf="@+id/StoredEmail"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/LabelBirthdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Birthdate: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredBirthdate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredPhone"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/StoredBirthdate"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelBirthdate"
-        app:layout_constraintTop_toBottomOf="@+id/StoredPhone"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                    <TextView
+                        android:id="@+id/LabelEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Email: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/LabelUserName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="User Name: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredUserName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredBirthdate"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
 
-    <TextView
-        android:id="@+id/StoredUserName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelUserName"
-        app:layout_constraintTop_toBottomOf="@+id/StoredBirthdate"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                    <TextView
+                        android:id="@+id/StoredEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/LabelPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password: "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/StoredPassword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredUserName"
-        android:gravity="end"
-        android:layout_marginEnd="8dp"/>
+                </LinearLayout>
 
-    <TextView
-        android:id="@+id/StoredPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/LabelPassword"
-        app:layout_constraintTop_toBottomOf="@+id/StoredUserName"
-        android:gravity="start"
-        android:layout_marginStart="8dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/EditProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:gravity="center"
-        android:text="Edit Profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/StoredPassword" />
+                    <TextView
+                        android:id="@+id/LabelPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Phone Number: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/Logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Logout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditProfile" />
+
+                    <TextView
+                        android:id="@+id/StoredPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/LabelBirthdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Date of Birth: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/StoredBirthdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/LabelUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Username: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/StoredUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/LabelPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Password: "
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/StoredPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="test"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/EditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/home_button"
+            android:contentDescription="Add Log Button"
+            android:gravity="center"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="80dp"
+            android:text="Edit Profile"
+            android:textSize="20dp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/Logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="155dp"
+            android:background="@drawable/home_button"
+            android:text="Logout"
+            android:textSize="20dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
                 editor.apply();
                 correctInformation = true;
 
-                setContentView(R.layout.successful_login_temporary_page);
                 Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
 
                 //creating a bundle and passing the current users ID to the next activity
@@ -198,7 +197,6 @@ public class MainActivity extends AppCompatActivity {
         User newUser = new User(rand.nextInt(25), firstName, lastName, userName, password, emailAddress, phoneNumber, dateOfBirth);
         handler.openDatabase();
         handler.insertUser(newUser);
-        setContentView(R.layout.successful_login_temporary_page);
         Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
         startActivity(intent);
         finish();
